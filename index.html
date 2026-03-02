@@ -3,81 +3,67 @@
 
 <head>
   <title>QuickCab Ahmedabad</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #000000, #1c1c1c);
-      color: white;
-      text-align: center;
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:linear-gradient(to right,#000,#1c1c1c);
+      color:white;
+      text-align:center;
     }
 
-    .hero {
-      padding: 80px 20px;
+    h1{color:gold;font-size:42px;margin-bottom:5px;}
+    h2{color:gold;}
+
+    .hero{padding:80px 20px;}
+
+    .btn{
+      display:inline-block;
+      margin:10px;
+      padding:15px 30px;
+      font-size:18px;
+      font-weight:bold;
+      border-radius:8px;
+      text-decoration:none;
+      transition:0.3s;
     }
 
-    h1 {
-      color: gold;
-      font-size: 42px;
-      margin-bottom: 10px;
+    .whatsapp{background:gold;color:black;}
+    .call{border:2px solid gold;color:gold;}
+
+    .btn:hover{transform:scale(1.05);}
+
+    .section{padding:50px 20px;}
+
+    .card-container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
     }
 
-    h2 {
-      color: gold;
+    .card{
+      background:#111;
+      padding:25px;
+      width:250px;
+      border-radius:12px;
+      border:1px solid gold;
     }
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 30px;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .whatsapp {
-      background: gold;
-      color: black;
-    }
-
-    .call {
-      background: black;
-      color: gold;
-      border: 2px solid gold;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    .services {
-      padding: 50px 20px;
-    }
-
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .card {
-      background: #111;
-      padding: 25px;
-      width: 250px;
-      border-radius: 12px;
-      border: 1px solid gold;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      transition: 0.3s;
+    .floating{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:gold;
+      color:black;
+      padding:15px 18px;
+      border-radius:50px;
+      font-weight:bold;
+      text-decoration:none;
+      box-shadow:0 0 10px gold;
     }
 
   </style>
@@ -85,50 +71,84 @@
 
 <body>
 
-  <div class="hero">
+<div class="hero">
 
-    <h1>🚖 QuickCab Ahmedabad</h1>
+<h1>🚖 QuickCab Ahmedabad</h1>
+<p>Ahmedabad’s Most Trusted Outstation Cab Service</p>
+<p>On-time pickup | Clean cars | Best price</p>
 
-    <p>On-time pickup with clean & comfortable rides</p>
+<a href="https://wa.me/917202801995" class="btn whatsapp">Book on WhatsApp</a>
+<a href="tel:7202801995" class="btn call">📞 Call Now</a>
 
-    <h2>Book Your Cab Now</h2>
+</div>
 
-    <a href="https://wa.me/917202801995" class="btn whatsapp">Book on WhatsApp</a>
+<div class="section">
 
-    <a href="tel:7202801995" class="btn call">📞 Call Now</a>
+<h2>Our Services</h2>
 
-  </div>
+<div class="card-container">
 
-  <div class="services">
+<div class="card">
+<h3>🚕 Local Ride</h3>
+<p>Anywhere in Ahmedabad</p>
+</div>
 
-    <h2>Our Services</h2>
+<div class="card">
+<h3>✈ Airport Transfer</h3>
+<p>On-time pickup & drop</p>
+</div>
 
-    <div class="card-container">
+<div class="card">
+<h3>🛣 Outstation</h3>
+<p>All over Gujarat & India</p>
+</div>
 
-      <div class="card">
-        <h3>🚕 Local Ride</h3>
-        <p>Quick pickup anywhere in Ahmedabad</p>
-      </div>
+<div class="card">
+<h3>⏱ Rental</h3>
+<p>Hourly packages available</p>
+</div>
 
-      <div class="card">
-        <h3>✈ Airport Transfer</h3>
-        <p>On-time airport pickup & drop</p>
-      </div>
+</div>
 
-      <div class="card">
-        <h3>🛣 Outstation</h3>
-        <p>Comfortable long distance rides</p>
-      </div>
+</div>
 
-      <div class="card">
-        <h3>⏱ Rental</h3>
-        <p>Hourly cab available</p>
-      </div>
+<div class="section">
 
-    </div>
+<h2>Our Cars</h2>
 
-  </div>
+<div class="card-container">
+
+<div class="card">
+<h3>🚘 Sedan</h3>
+<p>Comfortable long rides</p>
+</div>
+
+<div class="card">
+<h3>🚗 Hatchback</h3>
+<p>Budget friendly trips</p>
+</div>
+
+<div class="card">
+<h3>🚙 SUV (Coming Soon)</h3>
+<p>For family tours</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Why Choose Us</h2>
+
+<p>✔ On-time pickup</p>
+<p>✔ Clean & sanitized cars</p>
+<p>✔ Professional driver</p>
+<p>✔ Transparent pricing – No hidden charges</p>
+
+</div>
+
+<a href="https://wa.me/917202801995" class="floating">WhatsApp</a>
 
 </body>
-
 </html>
